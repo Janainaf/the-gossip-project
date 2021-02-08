@@ -1,8 +1,8 @@
-<!-- affiche les gossips-->
+
 
 
 <h1>Bienvenu sur ma page </h1>
-<h2>J'etait pas la pour le bootstrap alors </h>
+<h4>J'etait pas la pour le bootstrap alors </h4>
 <p>oui c'est moche! </p>
 
 
@@ -11,10 +11,9 @@
     
   <% @gossips.each do |gossip|%>
    
-         Gossip numero <%= gossip.id%>
         <div>
      	<%= link_to "Author", static_pages_home_path %> <%= gossip.user[:first_name]%> 
-        <%= gossip.user[:last_name]%>    </div>
+          </div>
         <b>Title: <%= gossip.title%> </b>
        </div>
   <br>
